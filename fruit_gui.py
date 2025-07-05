@@ -13,10 +13,6 @@ with open("class_names.json", "r") as f:
 # Load the trained model
 model = tf.keras.models.load_model('fruit_classifier.h5')
 
-# Class names (will be populated from training directory structure if available)
-# For dynamic class detection, you can pass the train directory classes if needed
-# class_names = list(model.class_names) if hasattr(model, 'class_names') else []  # Optional if known
-
 # Set image size as used in training
 IMG_SIZE = (64, 64)
 
